@@ -7,7 +7,8 @@ Registradores são áreas de memória **ultrarrápidas** dentro da CPU utilizada
 ### Tipos:
 - **Gerais**:
   - 64 bits: RAX, RBX, RCX, RDX, RSI, RDI, RBP, RSP, R8–R15
-  - 32 bits: EAX, EBX, ...
+  - Segmentos de 64 bits: : RSI, RDI, RBP, RSP
+  - 32 bits: : EAX, EBX, ECX, EDX
   - 16 bits: AX, BX, ...
   - 8 bits: AL, AH, BL, BH, ...
 
