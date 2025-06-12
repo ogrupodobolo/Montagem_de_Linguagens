@@ -49,9 +49,17 @@ mov rax, [x]        ; rax recebe valor do endereço de x
 mov [x], rax        ; valor de rax vai para o endereço x
 ```
 
+## 🔀 4. Instrução LEA
+
+A instrução `lea` realiza cálculos de endereçamento com base em um operando, sem movimentar efetivamente o operando
+
+- Utilizada para encontrar endereços de operandos em memória antes de buscá-los na memória
+- Alguns operandos, como vetores, matrizes e estruturas, requerem algum tipo de cálculo antes de seu acesso
+
+
 ---
 
-## 📐 4. Observações Importantes
+## 📐 5. Observações Importantes
 
 - As operações `mov` **não alteram** o conteúdo de origem.
 - Os tamanhos devem ser **compatíveis** (ex: 64 bits com 64 bits).
@@ -60,9 +68,10 @@ mov [x], rax        ; valor de rax vai para o endereço x
   mov [mem1], [mem2] ; ERRO: não pode mover direto de memória para memória
   ```
 
+
 ---
 
-## 🏗️ 5. Instruções de Preenchimento
+## 🏗️ 6. Instruções de Preenchimento
 
 Podemos usar caracteres de preenchimento em memória:
 
@@ -74,7 +83,7 @@ Cria 100 bytes consecutivos com o valor ASCII de `'a'`.
 
 ---
 
-## 🧪 6. Atividade Prática (AT0301)
+## 🧪 7. Atividade Prática (AT0301)
 
 - Analisar e depurar o código `a03e01.asm`.
 - Observar os efeitos das instruções `mov` sobre os registradores.
@@ -82,8 +91,3 @@ Cria 100 bytes consecutivos com o valor ASCII de `'a'`.
 
 ---
 
-## ⏭️ Próxima Aula (Aula 04)
-
-- Operações aritméticas (ADD, SUB, INC, DEC)
-- Flags de status
-- Comparações e instruções de salto
