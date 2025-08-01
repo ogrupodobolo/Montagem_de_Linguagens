@@ -1,0 +1,10 @@
+
+ ld -dynamic-linker /lib64/ld-linux-x86-64.so.2 -lc  opa.o -o opa.x
+
+
+
+http://blog.rchapman.org/post/36801038863/linux-system-call-table-for-x86-64
+
+
+
+https://en.wikipedia.org/wiki/Call_stack
